@@ -1,8 +1,16 @@
-. links {
+body {
+    background-color: lemonchiffon;
+    margin: 0;
+    height: 100%;
+}
+
+.links {
     text-align: center;
     font-size: 2vm;
 }
 
+
 h3 {
     text-decoration: underline;
 }
+
