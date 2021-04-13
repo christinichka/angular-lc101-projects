@@ -24,9 +24,16 @@ export class CandidatesComponent implements OnInit {
   }
 
   // Code the addToCrew function here:
-
+  addToCrew(person: object) {
+    // If candidate NOT part of crew - check if part of crew array, if not then push them into crew array
+    if (!this.crew.includes(person)){
+      this.crew.push(person);
+    }
+  }
 
   // BONUS: Code the changeMissionName function here:
-
-
+  changeMissionName(name: string){
+    this.missionName = name;
+    return false;
+  }
 }
